@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference | Adam Berardi</title>
+    <meta name="description" content="Continue the conversation with Adam Berardi: explore the AI Workflow Framework Resource Toolkit, read the Program Review AI case study, or get in touch.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .conference-page { background-color: var(--color-primary); }
+        .conference-main {
+            min-height: calc(100svh - 88px);
+            background-image: linear-gradient(rgba(10, 37, 64, 0.88), rgba(10, 37, 64, 0.94)), url("assets/workflow-image.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 3.5rem 1.25rem;
+            text-align: center;
+        }
+        .conference-content { width: 100%; max-width: 600px; margin: 0 auto; }
+        .conference-name { font-size: 2.5rem; line-height: 1.2; letter-spacing: -0.5px; }
+        .conference-name a { color: white; text-decoration: none; }
+        .conference-subtitle { margin-top: 0.65rem; color: var(--color-badge-text); font-size: 1.1rem; }
+        .conference-welcome { font-size: 1.5rem; line-height: 1.4; font-weight: 600; margin: 2rem 0 1.75rem; }
+        .conference-actions { display: grid; gap: 1rem; }
+        .conference-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 68px;
+            width: 100%;
+            padding: 1.15rem 1.5rem;
+            color: var(--color-primary);
+            background: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.4;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .conference-action:hover { background: #E8F0F2; border-color: #E8F0F2; }
+        .conference-action-primary { background: var(--color-accent); border-color: var(--color-accent); color: white; }
+        .conference-action-primary:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
+        .conference-main a:focus-visible { outline: 3px solid var(--color-badge-text); outline-offset: 5px; }
+        .conference-email { font-size: 1rem; margin-top: 0.8rem; overflow-wrap: anywhere; user-select: text; }
+        .conference-email-help { color: var(--color-text-light); font-size: 0.9rem; max-width: 440px; margin: 0.35rem auto 0; }
+        .conference-invitation { margin-top: 2rem; color: var(--color-text-light); font-size: 1.05rem; }
+        .conference-invitation p + p { margin-top: 0.5rem; color: white; }
+        @media (max-width: 480px) {
+            .conference-main { padding: 2.5rem 1.25rem; }
+            .conference-name { font-size: 2.15rem; }
+            .conference-welcome { font-size: 1.3rem; }
+            .conference-action { padding: 1rem; }
+        }
+    </style>
+</head>
+<body class="conference-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main id="main-content" class="conference-main" tabindex="-1">
+        <div class="conference-content">
+            <h1 class="conference-name"><a href="index.html">Adam Berardi</a></h1>
+            <p class="conference-subtitle">Human-Centered AI Strategy</p>
+            <h2 class="conference-welcome">Thanks for continuing the conversation.</h2>
+            <div class="conference-actions">
+                <a class="conference-action conference-action-primary" href="resources.html">View the AI Workflow Framework Resource Toolkit</a>
+                <a class="conference-action" href="assets/ai-enabled-program-review-case-study.pdf" target="_blank" rel="noopener noreferrer" aria-label="See the Program Review AI Case Study (PDF, opens in a new tab)">See the Program Review AI Case Study</a>
+                <a class="conference-action" href="https://www.linkedin.com/in/adamberardi" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn (opens in a new tab)">Connect on LinkedIn</a>
+                <div>
+                    <a class="conference-action" href="mailto:adam.berardi@adamberardi.com" aria-describedby="conference-email conference-email-help">Contact Me</a>
+                    <p id="conference-email" class="conference-email">adam.berardi@adamberardi.com</p>
+                    <p id="conference-email-help" class="conference-email-help">If your email app doesn’t open, copy this address into your preferred email service.</p>
+                </div>
+            </div>
+            <div class="conference-invitation">
+                <p>Interested in AI strategy, workflow transformation, speaking, or collaboration?</p>
+                <p>Let's talk.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Adam Berardi.</p>
+    </footer>
+</body>
+</html>
